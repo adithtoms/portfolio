@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    padding: 1vw 5px;
+    background-color: black;
+    position: sticky;
+    top: 1px;
+   
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.logo{
+    width: 100px;
+    height: 40px;
+    
+}
+.logopart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
+@media(max-width:500px){
+    .nav-link{
+        font-size: 0.8em;
+
+    }
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: aliceblue;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #f10b0b;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .home{
+    background: rgba(0,0,0,0.9)url("./images/pexels-pixabay-276452.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: aliceblue;
+  }
+  .desc{
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    padding: 35vh 20vh;
+  }
+
+  .desc span{
+    color: #f10b0b;
+  }
+  @media(max-width:500px){
+    .desc{
+        font-size: 1em;
+        padding: 15vh 10vh;
+
+    }
+}
+.about{
+    background-color: beige;
+    padding: 100px auto;
+    
+    
+
+}
+ .about>h1{
+    text-align: center;
+    font-size: 3em;
+ }
+ .text{
+    width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2em;
+    padding-top: 50px;
+ }
+ .section2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10vh 0vh;
+    flex-wrap: wrap;
+    
+ }
+ .skill{
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+ }
+ .sicon>i{
+    font-size: 90px;
+ }
+ .projects{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px;
+    flex-wrap: wrap;
+ }
+ .project{
+    width: 300px;
+ }
+ .pimg{
+    width: 100%;
+ }
