@@ -5,17 +5,16 @@
     padding: 0;
 }
 .header{
-    padding: 1vw 5px;
-    background-color: black;
-    position: sticky;
-    top: 1px;
-   
-}
-.container{
+   width: 100%;
+    padding: 5px;
+    background: rgba(0,0,0,0.5);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+   
 }
+
 
 
 .logo{
@@ -81,7 +80,7 @@
     color: aliceblue;
   }
   .section1{
-   height: 100vh;
+   min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,41 +137,58 @@
    font-weight: 600;
  }
  
-.about{
-    background-color: beige;
-    padding:50px
+.section2{
+    background-color: #1B1C1E;
+    color: aliceblue;
+    padding:50px auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   gap: 60px;
+    align-items: center;
+    padding-top: 50px;
 }
- .about>h1{
+ .section2>h1{
     text-align: center;
     font-size: 3em;
  }
+ .section2>h1>span{
+   color: rgb(228, 152, 10);
+ }
+ .about{
+   max-width: 60%;
+   min-height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+    
+ }
+
  .text{
-    max-width: 400px;
     font-size: 20px;
     font-weight: bold;
     line-height: 2em;
+    text-align: start;
+    padding-bottom: 30px;
+    border-bottom: 4px solid rgb(228, 152, 10);
  }
- .section2{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 30px;
-    
- }
+
  .skill{
-    max-width: 400px;
     display: flex;
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
+    min-width: 300px;
     
  }
  .sicon>i{
-    font-size: 100px;
+    font-size: 80px;
  }
  .section3{
+   min-height: 100vh;
     padding: 50px;
-    background-color: beige;
+    background-color: #1B1C1E;
     
  }
  .section3>h1{
@@ -192,8 +208,9 @@
     width: 100%;
  }
  .section4{
+   min-height: 100vh;
     padding: 50px;
-    background-color: beige;
+    background-color: #1B1C1E;
    
  }
  .section4>h1{
