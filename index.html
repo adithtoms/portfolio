@@ -5,60 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./images/icon.ico">
+    <title>Adith Toms Kurian</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/fb5ac14529.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
     <div class="main">
 
-        <div class="header">
-
-            <div class="container">
-                <div class="logopart">
-                    <a class="navbar-brand" href="#">
-                        <img class="logo" src="./images/atk-high-resolution-logo-color-on-transparent-background.png"
-                            alt="">
-                    </a>
-
+        <header id="navbar">
+            <nav class="navbar-container container">
+              <a href="/" class="home-link">
+                <div class="navbar-logo">Adith
                 </div>
-                <div class="itempart">
+              </a>
+              <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                  <li class="navbar-item"><a class="navbar-link"  href="#one">Home</a></li>
+                  <li class="navbar-item"><a class="navbar-link"  href="#two">About</a></li>
+                  <li class="navbar-item"><a class="navbar-link"  href="#three">Projects</a></li>
+                  <li class="navbar-item"><a class="navbar-link"  href="#four">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
 
-                    <ul class="items">
-                        <li class="nav-item">
-                            <a class="nav-link active hover-underline-animation" aria-current="page"
-                                href="#one">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-underline-animation" href="#two">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-underline-animation" href="#three">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-underline-animation" href="#four">Contact</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
+   
         <div class="home">
 
             <section class="section1" id="one">
+
+                <img src="./images/profile-pic.png" class="profile" alt="" srcset="">
 
                 <div>
                     <h1 class="hey">Hey, I'm <span class="name">Adith.</span></h1>
 
                     <p class="dev">I'm a Front-End Developer.</p>
-                    <button class="button">More About Me</button>
+                    <button class="button"><a href="./images/resume.pdf" target="_blank">Go to my Resume<a ></button>
 
                 </div>
             </section>
@@ -130,7 +123,13 @@
                         <p>Rock Paper Scissor is a game built with javascript.User can play against computer by
                             selecting any of the three options available.The one who reaches 5 points first wins!...</p>
 
-                    </div> <img class="pimg" src="./images/rck.png" alt="">
+                            <div class="buttons">
+                                <button class="preview-button"> <a href="https://adithtoms.github.io/rock_paper_scissors/" target="_blank">Preview &#10138;</a> </button>
+                                
+                                <button class="code-button"> <a href="https://github.com/adithtoms/rock_paper_scissors" target="_blank">Source &#10092; &#10093;</a> </button>
+                            </div>
+
+                    </div> <img class="pimg" src="./images/rock.png" alt="">
                 </div>
                 <div class="project">
                     <div class="ptext">
@@ -138,17 +137,25 @@
                         <p class="ptech"><span class="span">Technology Used :</span>JavaScript,HTML,CSS</p>
                         <p>A simple calculator built with javascript.Basic operations can be performed using this
                             calculator.The layout of calculator is done by using HTML and CSS.</p>
-
+                            <div class="buttons">
+                                <button class="preview-button"> <a href="https://adithtoms.github.io/calculator1/" target="_blank">Preview &#10138;</a> </button>
+                                
+                                <button class="code-button"> <a href="https://github.com/adithtoms/calculator1"target="_blank">Source &#10092; &#10093;</a> </button>
+                            </div>
                     </div> <img class="pimg" src="./images/calco.png" alt="">
                 </div>
                 <div class="project">
                     <div class="ptext">
-                        <p class="ptitle">Etch-a-Sketch</p>
+                        <p class="ptitle">Weather App</p>
                         <p class="ptech"><span class="span">Technology Used :</span>JavaScript,HTML,CSS</p>
-                        <p>Etch-a-Sketch is a drawing tool used to sketch anything you like.You can use differernt
-                            colors for drawing and also erase the sketch.Also user can change size of the brush.</p>
-
-                    </div> <img class="pimg" src="./images/etch-a-sketch-project.png" alt="">
+                        <p>With this app you can view the Weather status of a location . User can search a particular location. 
+                            JavaScript API's are used to collect the data. </p>
+                            <div class="buttons">
+                                <button class="preview-button"> <a href="https://adithtoms.github.io/weather/" target="_blank">Preview &#10138;</a> </button>
+                                
+                                <button class="code-button"> <a href="https://github.com/adithtoms/weather" target="_blank">Source &#10092; &#10093;</a> </button>
+                            </div>
+                    </div> <img class="pimg" src="./images/wethr.png" alt="">
                 </div>
 
             </div>
@@ -158,9 +165,9 @@
             <div class="contact">
 
                 <div class="socialicons">
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="devicon-linkedin-plain colored"></i>
-                    <i class="fa-brands fa-github gi"></i>
+                    <a href="mailto:adithtoms@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/adith-toms-kurian/" target="_blank"><i class="devicon-linkedin-plain colored"></i></a> 
+                    <a href="https://github.com/adithtoms?tab=repositories" target="_blank"><i class="fa-brands fa-github gi"> </i></a>
                 </div>
                 <form class="form" action="">
                     <input type="text" placeholder="Name">
