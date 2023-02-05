@@ -10,7 +10,7 @@
    --navbar-bg-contrast: hsl(0, 0%, 25%);
  }
  * {
-   box-sizing: border-box;
+   /* box-sizing: border-box; */
    margin: 0;
    padding: 0;
  }
@@ -244,7 +244,7 @@
    border-radius: 40px;
    background-color: transparent;
    border: 2px solid rgb(251, 199, 29);
-   
+  
 }
 .button a{
    text-decoration: none;
@@ -253,6 +253,7 @@
    color: aliceblue;
    font-weight: 600;
 }
+
 .button:hover{
    transform: scale(1.05);
 }
@@ -269,7 +270,7 @@
    border-top: 2px solid gray;
 }
 
-.section2>h1 {
+.section2 h1 {
    text-align: center;
    font-size: 3em;
 }
@@ -328,7 +329,7 @@
 
 }
 
-.section3>h1 {
+.section3 h1 {
    text-align: center;
    font-size: 3em;
 }
@@ -347,13 +348,13 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 40px;
    border-bottom: 2px solid rgb(228, 152, 10);
    padding: 20px 0px 20px 0px;
 }
 .buttons{
    display: flex;
-   gap: 50px;
+   justify-self: start;
+   gap: 10px;
 }
 
 .buttons a{
@@ -418,7 +419,7 @@
 
 }
 
-.section4>h1 {
+.section4 h1 {
    text-align: center;
    font-size: 3em;
 }
